@@ -1,16 +1,16 @@
-import React from "react";
-import Skeleton from "react-loading-skeleton";
-import { Link } from "react-router-dom";
+import React from 'react';
+import Skeleton from 'react-loading-skeleton';
+import { Link } from 'react-router-dom';
 
 function HomeRooms({ rooms, roomText }) {
-  console.log("rooms");
+  console.log('rooms');
   return (
     <>
       <div className="our-rooms">
         <div className="our-rooms-content">
           <p className="luxury-hotel-title">LUXURY HOTEL</p>
           <p className="our-rooms-title">Our Rooms</p>
-          <p className="our-rooms-text" style={{ width: "60%", margin: "0 auto", letterSpacing: "1px" }}>{roomText && roomText}</p>
+          <p className="our-rooms-text">{roomText && roomText}</p>
         </div>
         <div className="container">
           <div className="our-rooms-details-wrapper">
@@ -24,18 +24,18 @@ function HomeRooms({ rooms, roomText }) {
                           backgroundImage: `url(${room.feature_image})`,
                         }}
                       >
-                        <Link to={"/single_room/" + room.id}>
+                        <Link to={'/single_room/' + room.id}>
                           <div className="hotel-room-overlay"></div>
 
                           <div className="hotel-room-price">
                             <span className="price">
                               {room.offer_price > 0 ? (
                                 <>
-                                  ${" "}
-                                  <del style={{ color: "black" }}>
+                                  ${' '}
+                                  <del style={{ color: 'black' }}>
                                     {room.price}
                                   </del>
-                                  {"  "}
+                                  {'  '}
                                   <span>{room.offer_price}</span>
                                 </>
                               ) : (
@@ -46,9 +46,9 @@ function HomeRooms({ rooms, roomText }) {
 
                             <span
                               style={{
-                                fontSize: "16px",
-                                color: "white",
-                                fontWeight: "600",
+                                fontSize: '16px',
+                                color: 'white',
+                                fontWeight: '600',
                               }}
                             >
                               {room.title}

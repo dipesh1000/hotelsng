@@ -2,23 +2,23 @@ $primary-color: #ff6a00;
 
 // ------------- Fonts used ---------------------- //
 
-@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;600&display=swap"); // 'Fira Sans
-@import url("https://fonts.googleapis.com/css2?family=Arsenal&display=swap"); // 'Arsenal'
-@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;0,400;0,600;0,700;0,800;1,500&display=swap"); // 'Raleway'
-@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600;700;900&display=swap"); // 'Noto Serif JP'
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;600&display=swap'); // 'Fira Sans
+@import url('https://fonts.googleapis.com/css2?family=Arsenal&display=swap'); // 'Arsenal'
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;0,400;0,600;0,700;0,800;1,500&display=swap'); // 'Raleway'
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600;700;900&display=swap'); // 'Noto Serif JP'
 
 @font-face {
-  font-family: "SourceCodePro";
+  font-family: 'SourceCodePro';
   src: url(../fonts/SourceCodePro-Regular.ttf);
 }
 
 @font-face {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   src: url(../fonts/Montserrat.ttf);
 }
 
 @font-face {
-  font-family: "Montserrat-bold";
+  font-family: 'Montserrat-bold';
   src: url(../fonts/Montserrat-Bold.ttf);
 }
 
@@ -28,7 +28,7 @@ a:hover {
 
 body {
   position: initial !important;
-  font-family: "Raleway";
+  font-family: 'Raleway';
 }
 .goog-te-banner-frame.skiptranslate {
   display: none !important;
@@ -194,7 +194,7 @@ body {
 }
 .primary-navbar {
   margin-top: 20px;
-  font-family: "Fira Sans";
+  font-family: 'Fira Sans';
   background: linear-gradient(black, rgba(4, 0, 0, 0.04));
   margin-top: 0;
   font-weight: 600;
@@ -233,7 +233,7 @@ body {
     font-weight: 100;
   }
   a {
-    font-family: "DM Sans", sans-serif;
+    font-family: 'DM Sans', sans-serif;
     font-size: 18px;
     color: $primary-color;
     letter-spacing: 1px;
@@ -246,7 +246,7 @@ body {
     color: $primary-color;
   }
   span {
-    font-family: "DM Sans", sans-serif;
+    font-family: 'DM Sans', sans-serif;
     font-size: 18px;
     color: #d7d4d4;
     letter-spacing: 0px;
@@ -262,7 +262,7 @@ body {
   }
   .primary-navbar {
     margin-top: 0px;
-    font-family: "FontAwesome", sans-serif;
+    font-family: 'FontAwesome', sans-serif;
     background: #2f1333;
     padding-bottom: 5px;
     .nav-logo {
@@ -285,10 +285,10 @@ body {
     height: 240px;
   }
   .search-wrapper {
-    bottom: 48%!important;
+    bottom: 25% !important;
   }
   #banner-for-other-pages {
-    height: 240px!important;
+    height: 240px !important;
   }
 }
 
@@ -305,7 +305,7 @@ body {
 
   &::before,
   &::after {
-    content: "";
+    content: '';
     height: 70px;
     background-color: #e2e2e259;
     position: absolute;
@@ -357,7 +357,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-family: "Fira Sans";
+  font-family: 'Fira Sans';
 }
 
 // ---------------- mobile navbar --------------------//
@@ -664,10 +664,12 @@ body {
     margin: 0px;
   }
   .banner-description {
-    font-family: "FontAwesome", sans-serif;
+    font-family: 'FontAwesome', sans-serif;
     font-size: 14px;
     letter-spacing: 1px;
     padding-bottom: 10px;
+    height: 100px;
+    overflow: hidden;
   }
   .room-suite-link {
     a {
@@ -713,7 +715,7 @@ body {
       margin: 0px;
     }
     .banner-description {
-      font-family: "FontAwesome", sans-serif;
+      font-family: 'FontAwesome', sans-serif;
       font-size: 14px;
       letter-spacing: 1px;
       padding-bottom: 10px;
@@ -887,7 +889,7 @@ body {
         opacity: 1;
       }
     }
-    input[type="date"] {
+    input[type='date'] {
       overflow: ellipsis;
     }
     select {
@@ -1095,7 +1097,7 @@ body {
     font-family: ui-monospace;
   }
   .welcome-message {
-    font-family: "FontAwesome", sans-serif;
+    font-family: 'FontAwesome', sans-serif;
     font-size: 12px;
     letter-spacing: 1px;
     color: grey;
@@ -1107,7 +1109,7 @@ body {
     width: 100px;
   }
   .general-manager {
-    font-family: "FontAwesome", sans-serif;
+    font-family: 'FontAwesome', sans-serif;
     font-size: 12px;
     letter-spacing: 1px;
     color: grey;
@@ -1133,7 +1135,7 @@ body {
     }
     .welcome-message {
       width: 100%;
-      font-family: "FontAwesome", sans-serif;
+      font-family: 'FontAwesome', sans-serif;
       font-size: 12px;
       letter-spacing: 1px;
       color: grey;
@@ -1144,7 +1146,7 @@ body {
       width: 100px;
     }
     .general-manager {
-      font-family: "FontAwesome", sans-serif;
+      font-family: 'FontAwesome', sans-serif;
       font-size: 12px;
       letter-spacing: 1px;
       color: grey;
@@ -1194,7 +1196,7 @@ body {
     font-weight: 600;
   }
   .discover-location-text {
-    font-family: "FontAwesome", sans-serif;
+    font-family: 'FontAwesome', sans-serif;
     font-size: 12px;
     letter-spacing: 1px;
     color: grey;
@@ -1241,7 +1243,7 @@ body {
     padding-top: 10px;
   }
   .facility-text {
-    font-family: "FontAwesome", sans-serif;
+    font-family: 'FontAwesome', sans-serif;
     font-size: 12px;
     letter-spacing: 1px;
     color: grey;
@@ -1280,7 +1282,7 @@ body {
       padding-top: 10px;
     }
     .facility-text {
-      font-family: "FontAwesome", sans-serif;
+      font-family: 'FontAwesome', sans-serif;
       font-size: 12px;
       letter-spacing: 1px;
       color: grey;
@@ -1348,7 +1350,7 @@ body {
       line-height: 110%;
     }
     .summer-deals-text {
-      font-family: "FontAwesome", sans-serif;
+      font-family: 'FontAwesome', sans-serif;
       font-size: 12px;
       letter-spacing: 1px;
       color: grey;
@@ -1405,7 +1407,7 @@ body {
         line-height: 110%;
       }
       .summer-deals-text {
-        font-family: "FontAwesome", sans-serif;
+        font-family: 'FontAwesome', sans-serif;
         font-size: 12px;
         letter-spacing: 1px;
         color: grey;
@@ -1446,11 +1448,13 @@ body {
       line-height: 110%;
     }
     .our-rooms-text {
-      font-family: "FontAwesome", sans-serif;
+      font-family: 'FontAwesome', sans-serif;
       font-size: 12px;
       letter-spacing: 1px;
       color: grey;
       padding-bottom: 15px;
+      width: '60%';
+      margin: '0 auto';
     }
   }
 }
@@ -1467,7 +1471,7 @@ body {
       width: 32%;
       .hotel-room-image {
         overflow: hidden;
-        background-image: url("../images/discover-location-hotel-room.jpg");
+        background-image: url('../images/discover-location-hotel-room.jpg');
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
@@ -1542,7 +1546,7 @@ body {
         line-height: 110%;
       }
       .our-rooms-text {
-        font-family: "FontAwesome", sans-serif;
+        font-family: 'FontAwesome', sans-serif;
         font-size: 12px;
         letter-spacing: 1px;
         color: grey;
@@ -1567,7 +1571,7 @@ body {
         margin-bottom: 10px;
         .hotel-room-image {
           overflow: hidden;
-          background-image: url("../images/discover-location-hotel-room.jpg");
+          background-image: url('../images/discover-location-hotel-room.jpg');
           background-size: cover;
           background-position: center;
           height: inherit;
@@ -1842,6 +1846,31 @@ body {
       }
     }
   }
+  .our-rooms {
+    padding-bottom: 100px;
+    .our-rooms-content {
+      text-align: left;
+      padding: 0 25px;
+      .luxury-hotel-title {
+        font-family: sans-serif;
+        font-size: 9px;
+        color: #f78e57;
+        letter-spacing: 3px;
+        font-weight: 600;
+      }
+      .our-rooms-title {
+        font-size: 31px;
+        font-weight: 700;
+        font-family: ui-monospace;
+        line-height: 110%;
+      }
+      .our-rooms-text {
+        width: 100%;
+        margin: 0 auto;
+        text-align: left;
+      }
+    }
+  }
 }
 
 @media (max-width: 769px) {
@@ -1942,10 +1971,10 @@ body {
   }
 
   .read_more_btn.active::before {
-    content: "Read More";
+    content: 'Read More';
   }
   .read_more_btn::before {
-    content: "Read Less";
+    content: 'Read Less';
   }
 }
 .room-description-title {
@@ -2279,7 +2308,7 @@ footer {
     padding-bottom: 20px;
   }
   .footer-content {
-    font-family: "FontAwesome", sans-serif;
+    font-family: 'FontAwesome', sans-serif;
     font-size: 9px;
     letter-spacing: 1px;
     color: grey;
@@ -2292,7 +2321,7 @@ footer {
     .footer-item-list {
       text-align: left;
       p {
-        font-family: "Fira Sans";
+        font-family: 'Fira Sans';
         font-size: 20px;
         color: black;
         margin-bottom: 5px;
@@ -2345,7 +2374,7 @@ footer {
 
 .copyright-container {
   text-align: center;
-  font-family: "Fira Sans";
+  font-family: 'Fira Sans';
   .copyright-container-wrapper {
     text-align: center;
     margin: 0 auto;
@@ -2404,7 +2433,7 @@ footer {
       padding-bottom: 20px;
     }
     .footer-content {
-      font-family: "FontAwesome", sans-serif;
+      font-family: 'FontAwesome', sans-serif;
       font-size: 9px;
       letter-spacing: 1px;
       color: grey;
@@ -2489,7 +2518,7 @@ footer {
     line-height: 110%;
   }
   .offer-description {
-    font-family: "FontAwesome", sans-serif;
+    font-family: 'FontAwesome', sans-serif;
     font-size: 12px;
     letter-spacing: 1px;
     color: grey;
@@ -2518,7 +2547,7 @@ footer {
       position: relative;
       padding: 20px 0px 20px 20px;
       p {
-        font-family: "FontAwesome", sans-serif;
+        font-family: 'FontAwesome', sans-serif;
         font-size: 12px;
         font-weight: 700;
         letter-spacing: 3px;
@@ -2574,7 +2603,7 @@ footer {
       line-height: 110%;
     }
     .offer-description {
-      font-family: "FontAwesome", sans-serif;
+      font-family: 'FontAwesome', sans-serif;
       font-size: 12px;
       letter-spacing: 1px;
       color: grey;
@@ -2604,7 +2633,7 @@ footer {
         position: relative;
         padding: 20px 0px 20px 20px;
         p {
-          font-family: "FontAwesome", sans-serif;
+          font-family: 'FontAwesome', sans-serif;
           font-size: 12px;
           font-weight: 700;
           letter-spacing: 3px;
@@ -2657,7 +2686,7 @@ footer {
         margin: 0 auto;
       }
       .person-details {
-        font-family: "FontAwesome", sans-serif;
+        font-family: 'FontAwesome', sans-serif;
         font-size: 12px;
         letter-spacing: 1px;
         color: grey;
@@ -2669,7 +2698,7 @@ footer {
           letter-spacing: 3px;
           font-weight: 600;
           padding-top: 20px;
-          font-family: "FontAwesome", sans-serif;
+          font-family: 'FontAwesome', sans-serif;
           margin-bottom: 0px;
           padding-bottom: 5px;
         }
@@ -2701,7 +2730,7 @@ footer {
           margin: 0 auto;
         }
         .person-details {
-          font-family: "FontAwesome", sans-serif;
+          font-family: 'FontAwesome', sans-serif;
           font-size: 12px;
           letter-spacing: 1px;
           color: grey;
@@ -2713,7 +2742,7 @@ footer {
             letter-spacing: 3px;
             font-weight: 600;
             padding-top: 20px;
-            font-family: "FontAwesome", sans-serif;
+            font-family: 'FontAwesome', sans-serif;
             margin-bottom: 0px;
             padding-bottom: 5px;
           }
@@ -2929,7 +2958,7 @@ footer {
     line-height: 110%;
   }
   .read-our-faq-description {
-    font-family: "FontAwesome", sans-serif;
+    font-family: 'FontAwesome', sans-serif;
     font-size: 12px;
     letter-spacing: 1px;
     color: grey;
@@ -2948,7 +2977,7 @@ footer {
       border-bottom: none;
     }
     .contact-panel-item-description {
-      font-family: "FontAwesome", sans-serif;
+      font-family: 'FontAwesome', sans-serif;
       font-size: 10px;
       letter-spacing: 1px;
       color: grey;
@@ -2960,7 +2989,7 @@ footer {
       font-size: 15px;
     }
     p {
-      font-family: "FontAwesome", sans-serif;
+      font-family: 'FontAwesome', sans-serif;
       font-size: 12px;
       letter-spacing: 0.5px;
       font-weight: 600;
@@ -3079,7 +3108,7 @@ footer {
   }
   .leave-message-text {
     padding-top: 20px;
-    font-family: "FontAwesome", sans-serif;
+    font-family: 'FontAwesome', sans-serif;
     font-size: 12px;
     letter-spacing: 1px;
     color: grey;
@@ -3469,7 +3498,7 @@ footer {
       padding-bottom: 35px;
       flex-wrap: wrap;
       .package-quick-info-fact {
-        font-family: "FontAwesome", sans-serif;
+        font-family: 'FontAwesome', sans-serif;
         font-size: 12px;
         letter-spacing: 1px;
         color: grey;
@@ -3492,7 +3521,7 @@ footer {
     border: 1px solid #e4e4e4;
     border-radius: 5px;
     padding: 15px;
-    font-family: "FontAwesome", sans-serif;
+    font-family: 'FontAwesome', sans-serif;
     font-size: 16px;
     letter-spacing: 1px;
     color: grey;
@@ -3644,7 +3673,7 @@ footer {
       padding: 0px 30px;
 
       .package-item-title {
-        font-family: "Montserrat-bold";
+        font-family: 'Montserrat-bold';
         font-size: 25px;
         line-height: 1.23;
         letter-spacing: -0.5px;
@@ -3664,7 +3693,7 @@ footer {
         }
       }
       .package-item-description-text {
-        font-family: "Montserrat";
+        font-family: 'Montserrat';
         color: #969696;
         font-size: 14px;
         letter-spacing: 0px;
@@ -3679,7 +3708,7 @@ footer {
         height: 100%;
         border-left: 1.5px solid #d8d8d8;
         margin: 0 auto;
-        font-family: "Montserrat";
+        font-family: 'Montserrat';
         font-size: 13px;
         color: #5f5f5f;
         del {
@@ -3691,7 +3720,7 @@ footer {
           padding-top: 10px;
         }
         p:nth-child(3) {
-          font-family: "Montserrat-bold";
+          font-family: 'Montserrat-bold';
           font-size: 20px;
         }
       }
@@ -3818,12 +3847,12 @@ footer {
 
 .about-us-section {
   .about-us-main {
-    font-family: "Raleway";
+    font-family: 'Raleway';
     padding-top: 70px;
     padding-bottom: 70px;
     p {
       font-size: 35px;
-      font-family: "Noto Serif JP";
+      font-family: 'Noto Serif JP';
     }
     .about-us-main-image {
       img {
@@ -3835,7 +3864,7 @@ footer {
     text-align: center;
     p {
       font-size: 35px;
-      font-family: "Noto Serif JP";
+      font-family: 'Noto Serif JP';
       font-weight: 900;
     }
     .mission-icons {
@@ -3858,7 +3887,7 @@ footer {
           }
         }
         .mission-item-name {
-          font-family: "Raleway";
+          font-family: 'Raleway';
           padding-top: 10px;
           font-weight: 600;
         }
@@ -3873,7 +3902,7 @@ footer {
       text-align: center;
       p {
         font-size: 35px;
-        font-family: "Noto Serif JP";
+        font-family: 'Noto Serif JP';
         font-weight: 900;
       }
       .mission-icons {
@@ -3890,11 +3919,11 @@ footer {
   .why-smg-title {
     text-align: center;
     font-size: 35px;
-    font-family: "Noto Serif JP";
+    font-family: 'Noto Serif JP';
     font-weight: 900;
   }
   .why-smg-text {
-    font-family: "Raleway";
+    font-family: 'Raleway';
     li::marker {
       color: $primary-color;
     }
@@ -3915,17 +3944,17 @@ footer {
       padding: 15px;
     }
   }
-} 
+}
 @media (max-width: 460px) {
   .about-us-overview {
     & > div {
       img {
         padding-left: 0;
         padding-right: 0;
-        width: 100%!important;
+        width: 100% !important;
       }
     }
-  } 
+  }
 }
 
 // ----------------- About section ends ------------------
@@ -3944,7 +3973,7 @@ footer {
   padding-bottom: 70px;
   .reach-text {
     padding-bottom: 10px;
-    font-family: "Fira Sans";
+    font-family: 'Fira Sans';
     font-size: 14px;
   }
   .reach-text-title {
@@ -3973,7 +4002,7 @@ footer {
     text-align: center;
     font-size: 12px;
     letter-spacing: 1px;
-    font-family: "Raleway";
+    font-family: 'Raleway';
     color: black;
     .team-heading-title {
       font-size: 31px;
@@ -4001,20 +4030,20 @@ footer {
       .team-member-text {
         padding: 10px 0px;
         font-size: 12px;
-        font-family: "Raleway";
+        font-family: 'Raleway';
         color: black;
         letter-spacing: 1px;
         .team-member-name {
           font-size: 20px;
           font-weight: 700;
-          font-family: "Arsenal";
+          font-family: 'Arsenal';
           color: black;
         }
         .team-member-position {
           color: #ff6a00;
           font-size: 14px;
           font-weight: 600;
-          font-family: "FontAwesome", sans-serif;
+          font-family: 'FontAwesome', sans-serif;
           letter-spacing: 1px;
         }
         .para {
@@ -4036,7 +4065,7 @@ footer {
       text-align: center;
       font-size: 12px;
       letter-spacing: 1px;
-      font-family: "Raleway";
+      font-family: 'Raleway';
       color: black;
       .team-heading-title {
         font-size: 31px;
@@ -4064,14 +4093,14 @@ footer {
           .team-member-name {
             font-size: 20px;
             font-weight: 700;
-            font-family: "Arsenal";
+            font-family: 'Arsenal';
             color: black;
           }
           .team-member-position {
             color: #ff6a00;
             font-size: 14px;
             font-weight: 600;
-            font-family: "FontAwesome", sans-serif;
+            font-family: 'FontAwesome', sans-serif;
             letter-spacing: 1px;
           }
         }
@@ -4355,7 +4384,7 @@ footer {
   color: red;
 
   &::before {
-    content: "* ";
+    content: '* ';
   }
 }
 
@@ -4642,7 +4671,7 @@ footer {
           font-size: 1.7rem;
         }
         h2 {
-          font-size:  1.5rem;
+          font-size: 1.5rem;
         }
       }
     }

@@ -1,17 +1,17 @@
-import React, { useState, useEffect } from "react";
-import HomeBanner from "../components/Home/HomeBanner";
-import HomeWelcome from "../components/Home/HomeWelcome";
-import HomeDiscover from "../components/Home/HomeDiscover";
-import HomeSummer from "../components/Home/HomeSummer";
-import HomeRooms from "../components/Home/HomeRooms";
-import HomeNewsletter from "../components/Home/HomeNewsletter";
-import HomeSpecial from "../components/Home/HomeSpecial";
-import HomeTestimonial from "../components/Home/HomeTestimonial";
-import Footer from "../components/Common/Footer";
-import axiosInstance from "../helper/axios";
-import Axios from "axios";
-import CommingSoon from "../components/Ads/commingSoon";
-import $ from "jquery";
+import React, { useState, useEffect } from 'react';
+import HomeBanner from '../components/Home/HomeBanner';
+import HomeWelcome from '../components/Home/HomeWelcome';
+import HomeDiscover from '../components/Home/HomeDiscover';
+import HomeSummer from '../components/Home/HomeSummer';
+import HomeRooms from '../components/Home/HomeRooms';
+import HomeNewsletter from '../components/Home/HomeNewsletter';
+import HomeSpecial from '../components/Home/HomeSpecial';
+import HomeTestimonial from '../components/Home/HomeTestimonial';
+import Footer from '../components/Common/Footer';
+import axiosInstance from '../helper/axios';
+import Axios from 'axios';
+import CommingSoon from '../components/Ads/commingSoon';
+import $ from 'jquery';
 
 function Home() {
   const [rooms, setRooms] = useState();
@@ -51,7 +51,7 @@ function Home() {
     loadData();
     window.scrollTo(0, 0);
 
-    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById('mySidenav').style.width = '0';
   }, []);
   return (
     <div id="main">
@@ -60,7 +60,7 @@ function Home() {
       <HomeDiscover discover={discover} />
       <HomeSummer deal={deal} />
       <HomeRooms rooms={rooms} roomText={roomtext} />
-      <HomeNewsletter />
+      {/* <HomeNewsletter /> */}
       <HomeSpecial special={special} />
       <div className="container">
         <div className="vertical-divider"></div>

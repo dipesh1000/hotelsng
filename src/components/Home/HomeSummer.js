@@ -1,11 +1,10 @@
-import React from "react";
-import { useHistory } from "react-router";
-import { Link } from "react-router-dom";
-import { initialValues } from "../Variable/InitialValues";
-import WhereTo from "../Common/WhereTo";
+import React from 'react';
+import { useHistory } from 'react-router';
+import { Link } from 'react-router-dom';
+import { initialValues } from '../Variable/InitialValues';
+import WhereTo from '../Common/WhereTo';
 
 function HomeSummer({ deal }) {
-  console.log(deal, "From deals in summary ..........")
   return (
     <>
       <div className="summer-deals">
@@ -19,7 +18,7 @@ function HomeSummer({ deal }) {
             <div className="col-md-4">
               <div className="summer-deals-content">
                 <div className="summer-deals-wrapper">
-                  <p className="summer-deals-title">SUMMER DEALS</p>
+                  <p className="summer-deals-title">{deal && deal.subtitle}</p>
                   <p className="summer-deals-bold-title">
                     {deal && deal.title}
                   </p>

@@ -1,21 +1,22 @@
-import React, { useEffect, useState } from "react";
-import SearchBar from "../Common/SearchBar";
-import Navbar from "../Common/Navbar";
-import { Link } from "react-router-dom";
-import Skeleton from "react-loading-skeleton";
-import { addDays, set, format } from "date-fns";
-import Slider from "react-slick";
-import { initialValues } from "../Variable/InitialValues";
+import React, { useEffect, useState } from 'react';
+import SearchBar from '../Common/SearchBar';
+import Navbar from '../Common/Navbar';
+import { Link } from 'react-router-dom';
+import Skeleton from 'react-loading-skeleton';
+import { addDays, set, format } from 'date-fns';
+import Slider from 'react-slick';
+import { initialValues } from '../Variable/InitialValues';
 
 function HomeBanner({ banner }) {
+  console.log(banner, 'From banner ');
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-  autoplay: true,
-  autoplaySpeed: 3000,
+    autoplay: true,
+    autoplaySpeed: 3000,
   };
 
   return (
@@ -23,25 +24,31 @@ function HomeBanner({ banner }) {
       {/* <Navbar formData={initialValues} /> */}
       {banner ? (
         <Slider {...settings}>
-          {banner.map((banners) => (
-            <div>
-              <div
-                className="banner"
-                style={{ backgroundImage: `url(${banners.image})` }}
-              >
-                <div className="background-overlay">
-                  <div className="text-in-banner">
-                    <p className="banner-subtitle">BEST HOTEL AND RESORT</p>
-                    <p className="banner-title">HOTEL SNG</p>
-                    <p className="banner-description">{banners.text}</p>
-                    {/* <div className="room-suite-link">
+          {banner &&
+            banner.map((banners, index) => (
+              <div key={index}>
+                <div
+                  className="banner"
+                  style={{ backgroundImage: `url(${banners?.image})` }}
+                >
+                  <div className="background-overlay">
+                    <div className="text-in-banner">
+                      <p className="banner-subtitle">{banners?.subtitle}</p>
+                      <p className="banner-title">{banners?.title}</p>
+                      <p
+                        className="banner-description"
+                        dangerouslySetInnerHTML={{
+                          __html: banners?.text,
+                        }}
+                      ></p>
+                      {/* <div className="room-suite-link">
                     <Link to="/contact">Contact</Link>
                   </div> */}
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
         </Slider>
       ) : (
         <>

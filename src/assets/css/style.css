@@ -3,17 +3,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;0,400;0,600;0,700;0,800;1,500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600;700;900&display=swap");
 @font-face {
-  font-family: "SourceCodePro";
+  font-family: 'SourceCodePro';
   src: url(../fonts/SourceCodePro-Regular.ttf);
 }
 
 @font-face {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   src: url(../fonts/Montserrat.ttf);
 }
 
 @font-face {
-  font-family: "Montserrat-bold";
+  font-family: 'Montserrat-bold';
   src: url(../fonts/Montserrat-Bold.ttf);
 }
 
@@ -23,7 +23,7 @@ a:hover {
 
 body {
   position: initial !important;
-  font-family: "Raleway";
+  font-family: 'Raleway';
 }
 
 .goog-te-banner-frame.skiptranslate {
@@ -208,7 +208,7 @@ body {
 
 .primary-navbar {
   margin-top: 20px;
-  font-family: "Fira Sans";
+  font-family: 'Fira Sans';
   background: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(4, 0, 0, 0.04)));
   background: linear-gradient(black, rgba(4, 0, 0, 0.04));
   margin-top: 0;
@@ -248,7 +248,7 @@ body {
 }
 
 .banner-subpage a {
-  font-family: "DM Sans", sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-size: 18px;
   color: #ff6a00;
   letter-spacing: 1px;
@@ -263,7 +263,7 @@ body {
 }
 
 .banner-subpage span {
-  font-family: "DM Sans", sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-size: 18px;
   color: #d7d4d4;
   letter-spacing: 0px;
@@ -278,7 +278,7 @@ body {
   }
   .primary-navbar {
     margin-top: 0px;
-    font-family: "FontAwesome", sans-serif;
+    font-family: 'FontAwesome', sans-serif;
     background: #2f1333;
     padding-bottom: 5px;
   }
@@ -301,7 +301,7 @@ body {
     height: 240px;
   }
   .search-wrapper {
-    bottom: 48% !important;
+    bottom: 25% !important;
   }
   #banner-for-other-pages {
     height: 240px !important;
@@ -331,7 +331,7 @@ body {
 }
 
 .social-icon::before, .social-icon::after {
-  content: "";
+  content: '';
   height: 70px;
   background-color: #e2e2e259;
   position: absolute;
@@ -389,7 +389,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-family: "Fira Sans";
+  font-family: 'Fira Sans';
 }
 
 .sidenav {
@@ -755,10 +755,12 @@ body {
 }
 
 .text-in-banner .banner-description {
-  font-family: "FontAwesome", sans-serif;
+  font-family: 'FontAwesome', sans-serif;
   font-size: 14px;
   letter-spacing: 1px;
   padding-bottom: 10px;
+  height: 100px;
+  overflow: hidden;
 }
 
 .text-in-banner .room-suite-link a {
@@ -805,7 +807,7 @@ body {
     margin: 0px;
   }
   .text-in-banner .banner-description {
-    font-family: "FontAwesome", sans-serif;
+    font-family: 'FontAwesome', sans-serif;
     font-size: 14px;
     letter-spacing: 1px;
     padding-bottom: 10px;
@@ -1035,7 +1037,7 @@ body {
   opacity: 1;
 }
 
-.search-wrapper .item input[type="date"] {
+.search-wrapper .item input[type='date'] {
   overflow: ellipsis;
 }
 
@@ -1248,7 +1250,7 @@ body {
 }
 
 .welcome .welcome-message {
-  font-family: "FontAwesome", sans-serif;
+  font-family: 'FontAwesome', sans-serif;
   font-size: 12px;
   letter-spacing: 1px;
   color: grey;
@@ -1262,7 +1264,7 @@ body {
 }
 
 .welcome .general-manager {
-  font-family: "FontAwesome", sans-serif;
+  font-family: 'FontAwesome', sans-serif;
   font-size: 12px;
   letter-spacing: 1px;
   color: grey;
@@ -1289,7 +1291,7 @@ body {
   }
   .welcome .welcome-message {
     width: 100%;
-    font-family: "FontAwesome", sans-serif;
+    font-family: 'FontAwesome', sans-serif;
     font-size: 12px;
     letter-spacing: 1px;
     color: grey;
@@ -1300,7 +1302,7 @@ body {
     width: 100px;
   }
   .welcome .general-manager {
-    font-family: "FontAwesome", sans-serif;
+    font-family: 'FontAwesome', sans-serif;
     font-size: 12px;
     letter-spacing: 1px;
     color: grey;
@@ -1353,7 +1355,7 @@ body {
 }
 
 .discover-location-content .discover-location-text {
-  font-family: "FontAwesome", sans-serif;
+  font-family: 'FontAwesome', sans-serif;
   font-size: 12px;
   letter-spacing: 1px;
   color: grey;
@@ -1394,7 +1396,7 @@ body {
 }
 
 .hotel-facilities .facility-text {
-  font-family: "FontAwesome", sans-serif;
+  font-family: 'FontAwesome', sans-serif;
   font-size: 12px;
   letter-spacing: 1px;
   color: grey;
@@ -1437,7 +1439,7 @@ body {
     padding-top: 10px;
   }
   .hotel-facilities .facility-text {
-    font-family: "FontAwesome", sans-serif;
+    font-family: 'FontAwesome', sans-serif;
     font-size: 12px;
     letter-spacing: 1px;
     color: grey;
@@ -1516,7 +1518,7 @@ body {
 }
 
 .summer-deals .summer-deals-content .summer-deals-text {
-  font-family: "FontAwesome", sans-serif;
+  font-family: 'FontAwesome', sans-serif;
   font-size: 12px;
   letter-spacing: 1px;
   color: grey;
@@ -1580,7 +1582,7 @@ body {
     line-height: 110%;
   }
   .summer-deals .summer-deals-content .summer-deals-text {
-    font-family: "FontAwesome", sans-serif;
+    font-family: 'FontAwesome', sans-serif;
     font-size: 12px;
     letter-spacing: 1px;
     color: grey;
@@ -1623,11 +1625,13 @@ body {
 }
 
 .our-rooms .our-rooms-content .our-rooms-text {
-  font-family: "FontAwesome", sans-serif;
+  font-family: 'FontAwesome', sans-serif;
   font-size: 12px;
   letter-spacing: 1px;
   color: grey;
   padding-bottom: 15px;
+  width: '60%';
+  margin: '0 auto';
 }
 
 .our-rooms-details-wrapper {
@@ -1734,7 +1738,7 @@ body {
     line-height: 110%;
   }
   .our-rooms .our-rooms-content .our-rooms-text {
-    font-family: "FontAwesome", sans-serif;
+    font-family: 'FontAwesome', sans-serif;
     font-size: 12px;
     letter-spacing: 1px;
     color: grey;
@@ -2111,6 +2115,31 @@ body {
   #room-section-for-single-room .container .room-pricing {
     padding-bottom: 0px;
   }
+  .our-rooms {
+    padding-bottom: 100px;
+  }
+  .our-rooms .our-rooms-content {
+    text-align: left;
+    padding: 0 25px;
+  }
+  .our-rooms .our-rooms-content .luxury-hotel-title {
+    font-family: sans-serif;
+    font-size: 9px;
+    color: #f78e57;
+    letter-spacing: 3px;
+    font-weight: 600;
+  }
+  .our-rooms .our-rooms-content .our-rooms-title {
+    font-size: 31px;
+    font-weight: 700;
+    font-family: ui-monospace;
+    line-height: 110%;
+  }
+  .our-rooms .our-rooms-content .our-rooms-text {
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+  }
 }
 
 @media (max-width: 769px) {
@@ -2213,11 +2242,11 @@ body {
 }
 
 .room-description .read_more_btn.active::before {
-  content: "Read More";
+  content: 'Read More';
 }
 
 .room-description .read_more_btn::before {
-  content: "Read Less";
+  content: 'Read Less';
 }
 
 .room-description-title {
@@ -2583,7 +2612,7 @@ footer .address-contact {
 }
 
 footer .footer-content {
-  font-family: "FontAwesome", sans-serif;
+  font-family: 'FontAwesome', sans-serif;
   font-size: 9px;
   letter-spacing: 1px;
   color: grey;
@@ -2600,7 +2629,7 @@ footer .footer-content .footer-item-list {
 }
 
 footer .footer-content .footer-item-list p {
-  font-family: "Fira Sans";
+  font-family: 'Fira Sans';
   font-size: 20px;
   color: black;
   margin-bottom: 5px;
@@ -2666,7 +2695,7 @@ footer .social-media-icons ul li a:hover {
 
 .copyright-container {
   text-align: center;
-  font-family: "Fira Sans";
+  font-family: 'Fira Sans';
 }
 
 .copyright-container .copyright-container-wrapper {
@@ -2735,7 +2764,7 @@ footer .social-media-icons ul li a:hover {
     padding-bottom: 20px;
   }
   footer .footer-content {
-    font-family: "FontAwesome", sans-serif;
+    font-family: 'FontAwesome', sans-serif;
     font-size: 9px;
     letter-spacing: 1px;
     color: grey;
@@ -2837,7 +2866,7 @@ footer .social-media-icons ul li a:hover {
 }
 
 .special-offer .offer-description {
-  font-family: "FontAwesome", sans-serif;
+  font-family: 'FontAwesome', sans-serif;
   font-size: 12px;
   letter-spacing: 1px;
   color: grey;
@@ -2873,7 +2902,7 @@ footer .social-media-icons ul li a:hover {
 }
 
 .special-offer .offer .offer-content p {
-  font-family: "FontAwesome", sans-serif;
+  font-family: 'FontAwesome', sans-serif;
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 3px;
@@ -2936,7 +2965,7 @@ footer .social-media-icons ul li a:hover {
     line-height: 110%;
   }
   .special-offer .offer-description {
-    font-family: "FontAwesome", sans-serif;
+    font-family: 'FontAwesome', sans-serif;
     font-size: 12px;
     letter-spacing: 1px;
     color: grey;
@@ -2968,7 +2997,7 @@ footer .social-media-icons ul li a:hover {
     padding: 20px 0px 20px 20px;
   }
   .special-offer .offer .offer-content p {
-    font-family: "FontAwesome", sans-serif;
+    font-family: 'FontAwesome', sans-serif;
     font-size: 12px;
     font-weight: 700;
     letter-spacing: 3px;
@@ -3027,7 +3056,7 @@ footer .social-media-icons ul li a:hover {
 }
 
 .testimonial .testimonial-slide .testimonial-content .person-details {
-  font-family: "FontAwesome", sans-serif;
+  font-family: 'FontAwesome', sans-serif;
   font-size: 12px;
   letter-spacing: 1px;
   color: grey;
@@ -3041,7 +3070,7 @@ footer .social-media-icons ul li a:hover {
   letter-spacing: 3px;
   font-weight: 600;
   padding-top: 20px;
-  font-family: "FontAwesome", sans-serif;
+  font-family: 'FontAwesome', sans-serif;
   margin-bottom: 0px;
   padding-bottom: 5px;
 }
@@ -3078,7 +3107,7 @@ footer .social-media-icons ul li a:hover {
     margin: 0 auto;
   }
   .testimonial .testimonial-slide .testimonial-content .person-details {
-    font-family: "FontAwesome", sans-serif;
+    font-family: 'FontAwesome', sans-serif;
     font-size: 12px;
     letter-spacing: 1px;
     color: grey;
@@ -3091,7 +3120,7 @@ footer .social-media-icons ul li a:hover {
     letter-spacing: 3px;
     font-weight: 600;
     padding-top: 20px;
-    font-family: "FontAwesome", sans-serif;
+    font-family: 'FontAwesome', sans-serif;
     margin-bottom: 0px;
     padding-bottom: 5px;
   }
@@ -3341,7 +3370,7 @@ footer .social-media-icons ul li a:hover {
 }
 
 .contact-section .read-our-faq-description {
-  font-family: "FontAwesome", sans-serif;
+  font-family: 'FontAwesome', sans-serif;
   font-size: 12px;
   letter-spacing: 1px;
   color: grey;
@@ -3363,7 +3392,7 @@ footer .social-media-icons ul li a:hover {
 }
 
 .contact-section .contact-panel .contact-panel-item-description {
-  font-family: "FontAwesome", sans-serif;
+  font-family: 'FontAwesome', sans-serif;
   font-size: 10px;
   letter-spacing: 1px;
   color: grey;
@@ -3377,7 +3406,7 @@ footer .social-media-icons ul li a:hover {
 }
 
 .contact-section .contact-panel p {
-  font-family: "FontAwesome", sans-serif;
+  font-family: 'FontAwesome', sans-serif;
   font-size: 12px;
   letter-spacing: 0.5px;
   font-weight: 600;
@@ -3494,7 +3523,7 @@ footer .social-media-icons ul li a:hover {
 
 .leave-message-section .leave-message-text {
   padding-top: 20px;
-  font-family: "FontAwesome", sans-serif;
+  font-family: 'FontAwesome', sans-serif;
   font-size: 12px;
   letter-spacing: 1px;
   color: grey;
@@ -3972,7 +4001,7 @@ footer .social-media-icons ul li a:hover {
 }
 
 .package-section .package-quick-info .package-quick-info-content .package-quick-info-fact {
-  font-family: "FontAwesome", sans-serif;
+  font-family: 'FontAwesome', sans-serif;
   font-size: 12px;
   letter-spacing: 1px;
   color: grey;
@@ -3996,7 +4025,7 @@ footer .social-media-icons ul li a:hover {
   border: 1px solid #e4e4e4;
   border-radius: 5px;
   padding: 15px;
-  font-family: "FontAwesome", sans-serif;
+  font-family: 'FontAwesome', sans-serif;
   font-size: 16px;
   letter-spacing: 1px;
   color: grey;
@@ -4182,7 +4211,7 @@ footer .social-media-icons ul li a:hover {
 }
 
 .all-packages-section .package-item .package-item-description .package-item-title {
-  font-family: "Montserrat-bold";
+  font-family: 'Montserrat-bold';
   font-size: 25px;
   line-height: 1.23;
   letter-spacing: -0.5px;
@@ -4210,7 +4239,7 @@ footer .social-media-icons ul li a:hover {
 }
 
 .all-packages-section .package-item .package-item-description .package-item-description-text {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   color: #969696;
   font-size: 14px;
   letter-spacing: 0px;
@@ -4227,7 +4256,7 @@ footer .social-media-icons ul li a:hover {
   height: 100%;
   border-left: 1.5px solid #d8d8d8;
   margin: 0 auto;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-size: 13px;
   color: #5f5f5f;
 }
@@ -4243,7 +4272,7 @@ footer .social-media-icons ul li a:hover {
 }
 
 .all-packages-section .package-item .package-item-pricing .package-item-pricing-box p:nth-child(3) {
-  font-family: "Montserrat-bold";
+  font-family: 'Montserrat-bold';
   font-size: 20px;
 }
 
@@ -4359,14 +4388,14 @@ footer .social-media-icons ul li a:hover {
 }
 
 .about-us-section .about-us-main {
-  font-family: "Raleway";
+  font-family: 'Raleway';
   padding-top: 70px;
   padding-bottom: 70px;
 }
 
 .about-us-section .about-us-main p {
   font-size: 35px;
-  font-family: "Noto Serif JP";
+  font-family: 'Noto Serif JP';
 }
 
 .about-us-section .about-us-main .about-us-main-image img {
@@ -4379,7 +4408,7 @@ footer .social-media-icons ul li a:hover {
 
 .about-us-section .mission p {
   font-size: 35px;
-  font-family: "Noto Serif JP";
+  font-family: 'Noto Serif JP';
   font-weight: 900;
 }
 
@@ -4406,7 +4435,7 @@ footer .social-media-icons ul li a:hover {
 }
 
 .about-us-section .mission .mission-icons .mission-item .mission-item-name {
-  font-family: "Raleway";
+  font-family: 'Raleway';
   padding-top: 10px;
   font-weight: 600;
 }
@@ -4417,7 +4446,7 @@ footer .social-media-icons ul li a:hover {
   }
   .about-us-section .mission p {
     font-size: 35px;
-    font-family: "Noto Serif JP";
+    font-family: 'Noto Serif JP';
     font-weight: 900;
   }
   .about-us-section .mission .mission-icons {
@@ -4431,12 +4460,12 @@ footer .social-media-icons ul li a:hover {
 .why-smg .why-smg-title {
   text-align: center;
   font-size: 35px;
-  font-family: "Noto Serif JP";
+  font-family: 'Noto Serif JP';
   font-weight: 900;
 }
 
 .why-smg .why-smg-text {
-  font-family: "Raleway";
+  font-family: 'Raleway';
 }
 
 .why-smg .why-smg-text li::marker {
@@ -4476,7 +4505,7 @@ footer .social-media-icons ul li a:hover {
 
 .reach-section .reach-text {
   padding-bottom: 10px;
-  font-family: "Fira Sans";
+  font-family: 'Fira Sans';
   font-size: 14px;
 }
 
@@ -4503,7 +4532,7 @@ footer .social-media-icons ul li a:hover {
   text-align: center;
   font-size: 12px;
   letter-spacing: 1px;
-  font-family: "Raleway";
+  font-family: 'Raleway';
   color: black;
 }
 
@@ -4541,7 +4570,7 @@ footer .social-media-icons ul li a:hover {
 .team-section .team-all .team-member .team-member-text {
   padding: 10px 0px;
   font-size: 12px;
-  font-family: "Raleway";
+  font-family: 'Raleway';
   color: black;
   letter-spacing: 1px;
 }
@@ -4549,7 +4578,7 @@ footer .social-media-icons ul li a:hover {
 .team-section .team-all .team-member .team-member-text .team-member-name {
   font-size: 20px;
   font-weight: 700;
-  font-family: "Arsenal";
+  font-family: 'Arsenal';
   color: black;
 }
 
@@ -4557,7 +4586,7 @@ footer .social-media-icons ul li a:hover {
   color: #ff6a00;
   font-size: 14px;
   font-weight: 600;
-  font-family: "FontAwesome", sans-serif;
+  font-family: 'FontAwesome', sans-serif;
   letter-spacing: 1px;
 }
 
@@ -4577,7 +4606,7 @@ footer .social-media-icons ul li a:hover {
     text-align: center;
     font-size: 12px;
     letter-spacing: 1px;
-    font-family: "Raleway";
+    font-family: 'Raleway';
     color: black;
   }
   .team-section .team-heading .team-heading-title {
@@ -4609,14 +4638,14 @@ footer .social-media-icons ul li a:hover {
   .team-section .team-all .team-member .team-member-text .team-member-name {
     font-size: 20px;
     font-weight: 700;
-    font-family: "Arsenal";
+    font-family: 'Arsenal';
     color: black;
   }
   .team-section .team-all .team-member .team-member-text .team-member-position {
     color: #ff6a00;
     font-size: 14px;
     font-weight: 600;
-    font-family: "FontAwesome", sans-serif;
+    font-family: 'FontAwesome', sans-serif;
     letter-spacing: 1px;
   }
 }
@@ -4912,7 +4941,7 @@ footer .social-media-icons ul li a:hover {
 }
 
 .error::before {
-  content: "* ";
+  content: '* ';
 }
 
 .spinner-border {

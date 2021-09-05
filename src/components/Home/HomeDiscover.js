@@ -1,8 +1,7 @@
-import React from "react";
+import React from 'react';
 
 function HomeDiscover(discover) {
   const props = discover.discover;
-  console.log(props, ">>>>>>>>>")
   return (
     <>
       <div className="discover-locations">
@@ -10,7 +9,12 @@ function HomeDiscover(discover) {
           <div className="row">
             <div className="col-lg-6">
               <div className="discover-location-content">
-                <div className="best-resort-title" style={{ letterSpacing: ".1em" }}>Hotel SNG</div>
+                <div
+                  className="best-resort-title"
+                  style={{ letterSpacing: '.1em' }}
+                >
+                  Hotel SNG
+                </div>
                 <p className="discover-location-title">
                   {props && props.title}
                 </p>
