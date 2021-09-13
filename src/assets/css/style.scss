@@ -668,7 +668,7 @@ body {
     font-size: 14px;
     letter-spacing: 1px;
     padding-bottom: 10px;
-    height: 100px;
+    max-height: 100px;
     overflow: hidden;
   }
   .room-suite-link {
@@ -1123,16 +1123,13 @@ body {
 }
 
 @media (max-width: 426px) {
-  .welcome {
-    text-align: center;
-    padding-top: 120px;
-    padding-bottom: 180px;
-    background-color: #ffffff;
-    .welcome-title {
-      font-size: 31px;
-      font-weight: 700;
-      font-family: ui-monospace;
+  .text-in-banner {
+    .banner-title {
+      font-size: 1.7rem;
     }
+  }
+  .welcome {
+    padding-top: 75px;
     .welcome-message {
       width: 100%;
       font-family: 'FontAwesome', sans-serif;
@@ -1453,8 +1450,8 @@ body {
       letter-spacing: 1px;
       color: grey;
       padding-bottom: 15px;
-      width: '60%';
-      margin: '0 auto';
+      width: '60%' !important;
+      margin: '0 auto' !important;
     }
   }
 }

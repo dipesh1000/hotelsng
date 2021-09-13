@@ -7,7 +7,7 @@ function HomeRooms({ rooms, roomText }) {
   return (
     <>
       <div className="our-rooms">
-        <div className="our-rooms-content">
+        <div className="our-rooms-content container">
           <p className="luxury-hotel-title">LUXURY HOTEL</p>
           <p className="our-rooms-title">Our Rooms</p>
           <p className="our-rooms-text">{roomText && roomText}</p>

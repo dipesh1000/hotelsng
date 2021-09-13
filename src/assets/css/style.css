@@ -759,7 +759,7 @@ body {
   font-size: 14px;
   letter-spacing: 1px;
   padding-bottom: 10px;
-  height: 100px;
+  max-height: 100px;
   overflow: hidden;
 }
 
@@ -1278,16 +1278,11 @@ body {
 }
 
 @media (max-width: 426px) {
-  .welcome {
-    text-align: center;
-    padding-top: 120px;
-    padding-bottom: 180px;
-    background-color: #ffffff;
+  .text-in-banner .banner-title {
+    font-size: 1.7rem;
   }
-  .welcome .welcome-title {
-    font-size: 31px;
-    font-weight: 700;
-    font-family: ui-monospace;
+  .welcome {
+    padding-top: 75px;
   }
   .welcome .welcome-message {
     width: 100%;
@@ -1630,8 +1625,8 @@ body {
   letter-spacing: 1px;
   color: grey;
   padding-bottom: 15px;
-  width: '60%';
-  margin: '0 auto';
+  width: '60%' !important;
+  margin: '0 auto' !important;
 }
 
 .our-rooms-details-wrapper {

@@ -1,13 +1,12 @@
-import { React, useState, useEffect, useRef } from "react";
-import CheckoutForm from "./CheckoutForm";
-import Slider from "react-slick";
-import Skeleton from "react-loading-skeleton";
-import Axios from "axios";
-import axiosInstance from "../../helper/axios";
+import { React, useState, useEffect, useRef } from 'react';
+import CheckoutForm from './CheckoutForm';
+import Slider from 'react-slick';
+import Skeleton from 'react-loading-skeleton';
+import Axios from 'axios';
+import axiosInstance from '../../helper/axios';
 
 function CheckoutSection({ room, form }) {
-  
-  console.log(room, "From Room in checkout section");
+  console.log(room, 'From Room in checkout section');
 
   const [occupancy, setOccupancy] = useState([]);
   const [roomTypeId, setRoomTypeId] = useState();
@@ -29,18 +28,17 @@ function CheckoutSection({ room, form }) {
     autoplaySpeed: 3000,
   };
   useEffect(() => {
-    setData({...data, "occupancy": form?.occupancy, "room_type_id": room?.id});
-  }, [room, form])
- 
-  console.log(data, "From room booking")
+    setData({ ...data, occupancy: form?.occupancy, room_type_id: room?.id });
+  }, [room, form]);
+
+  console.log(data, 'From room booking');
   useEffect(() => {
     let source = Axios.CancelToken.source();
     const loadData = async () => {
       try {
         const response = await axiosInstance.post(`/checkout`, data);
-        setTotalPrice(response.data.total_price)
-        return response
-      
+        setTotalPrice(response.data.total_price);
+        return response;
       } catch (error) {
         if (!Axios.isCancel(error)) {
           throw error;
@@ -52,7 +50,7 @@ function CheckoutSection({ room, form }) {
     };
     data && loadData();
   }, [data]);
-  console.log(totalPrice, "data From Data  >><<<>>><<>")
+  console.log(totalPrice, 'data From Data  >><<<>>><<>');
 
   useEffect(() => {
     setNav1(slider1);
@@ -105,7 +103,7 @@ function CheckoutSection({ room, form }) {
                     </Slider>
                   </div>
                   <div className="room-pricing">
-                    FROM{" "}
+                    FROM{' '}
                     {room && room.offer_price > 0 ? (
                       <>
                         <span className="offer_price">
@@ -121,13 +119,13 @@ function CheckoutSection({ room, form }) {
                   <div className="room-facility">
                     <div className="facility-item">
                       <img
-                        src={process.env.PUBLIC_URL + "/images/png/guests.png"}
+                        src={process.env.PUBLIC_URL + '/images/png/guests.png'}
                       />
                       &nbsp;
                       {form &&
                         form.occupancy
                           .map((item) => item.adult)
-                          .reduce((curval, newval) => curval + newval)}{" "}
+                          .reduce((curval, newval) => curval + newval)}{' '}
                       Adult &nbsp;
                       {form &&
                       form.occupancy
@@ -136,12 +134,12 @@ function CheckoutSection({ room, form }) {
                         ? form.occupancy
                             .map((item) => item.child)
                             .reduce((curval, newval) => curval + newval) +
-                          " Child"
-                        : ""}{" "}
+                          ' Child'
+                        : ''}{' '}
                     </div>
                     <div className="facility-item">
                       <img
-                        src={process.env.PUBLIC_URL + "/images/png/bed.png"}
+                        src={process.env.PUBLIC_URL + '/images/png/bed.png'}
                       />
                       &nbsp;{form && form.occupancy.length} Rooms
                     </div>
@@ -156,11 +154,11 @@ function CheckoutSection({ room, form }) {
                       <div>
                         <h3>Occupancy</h3>
                         <p>
-                          {form && form.occupancy.length} Room{" "}
+                          {form && form.occupancy.length} Room{' '}
                           {form &&
                             form.occupancy
                               .map((item) => item.adult)
-                              .reduce((curval, newval) => curval + newval)}{" "}
+                              .reduce((curval, newval) => curval + newval)}{' '}
                           Adult &nbsp;
                           {form &&
                           form.occupancy
@@ -169,8 +167,8 @@ function CheckoutSection({ room, form }) {
                             ? form.occupancy
                                 .map((item) => item.child)
                                 .reduce((curval, newval) => curval + newval) +
-                              " Child"
-                            : ""}{" "}
+                              ' Child'
+                            : ''}{' '}
                         </p>
                       </div>
                       <div>
@@ -183,7 +181,11 @@ function CheckoutSection({ room, form }) {
                       </div>
                       <div>
                         <h3>{room && room.title}</h3>
-                        <p>Dream Deals - Superior Room - Breakfast included</p>
+                        <p>
+                          {room?.inclusions?.map((inclu, index) => (
+                            <span>{inclu}</span>
+                          ))}
+                        </p>
                       </div>
                       <div>
                         <h3>Total Price </h3>
@@ -198,9 +200,7 @@ function CheckoutSection({ room, form }) {
                             ? room.offer_price
                             : room.price}{" "}
                         </p> */}
-                        <p>
-                          {totalPrice}
-                        </p>
+                        <p>{totalPrice}</p>
                       </div>
                     </div>
                   ) : (
@@ -215,7 +215,11 @@ function CheckoutSection({ room, form }) {
                       <div class="form-header">
                         <h2>Personal information</h2>
                       </div>
-                      <CheckoutForm totalPrice={totalPrice} roomData={room} formData={form} />
+                      <CheckoutForm
+                        totalPrice={totalPrice}
+                        roomData={room}
+                        formData={form}
+                      />
                     </div>
                   </div>
                 </div>

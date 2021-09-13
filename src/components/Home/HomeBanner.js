@@ -10,7 +10,7 @@ import { initialValues } from '../Variable/InitialValues';
 function HomeBanner({ banner }) {
   console.log(banner, 'From banner ');
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
